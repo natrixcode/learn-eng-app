@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="dashbicon" data-name="dashbicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.53 135.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="3.5" y="73.89" width="60.5" height="58.15" rx="12" ry="12"/>
+  <rect class="cls-1" x="3.5" y="3.5" width="60.5" height="59.08" rx="12" ry="12"/>
+  <rect class="cls-1" x="82.15" y=".92" width="47.3" height="52.45" rx="12" ry="12" transform="translate(132.95 -78.65) rotate(90)"/>
+  <rect class="cls-1" x="91.96" y="91.98" width="27.69" height="52.45" rx="8.7" ry="8.7" transform="translate(224 12.4) rotate(90)"/>
+  <rect class="cls-1" x="91.96" y="51.62" width="27.69" height="52.45" rx="8.7" ry="8.7" transform="translate(183.65 -27.96) rotate(90)"/>
+</svg>

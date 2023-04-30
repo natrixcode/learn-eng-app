@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="writingicon" data-name="writingicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.39 163.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1d1d1b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5" y="18.33" width="140" height="140" rx="24.14" ry="24.14"/>
+  <g>
+    <polygon class="cls-1" points="149.29 38.04 99.38 99.68 83.87 106.41 68.37 113.14 71.73 96.57 75.07 80.01 124.98 18.36 149.29 38.04"/>
+    <path class="cls-1" d="M157.32,28.11l-8.04,9.93-24.31-19.68,8.04-9.93c3.22-3.98,9.05-4.59,13.03-1.37l9.91,8.02c3.97,3.22,4.59,9.05,1.37,13.02Z"/>
+  </g>
+</svg>
