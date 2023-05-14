@@ -8,12 +8,14 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.4",
+        "illuminate/mail": "*",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.15",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.6",
         "laravel/ui": "^4.2",
-        "socialiteproviders/google": "^4.1"
+        "socialiteproviders/google": "^4.1",
+        "swiftmailer/swiftmailer": "^5.4"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",

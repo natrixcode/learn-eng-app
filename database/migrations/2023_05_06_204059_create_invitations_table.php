@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateInvitationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,15 @@ return new class extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('google_id')->nullable();
-        });
-    }
+{
+    Schema::create('invited_emails', function (Blueprint $table) {
+        $table->id();
+        $table->string('email');
+        $table->timestamps();
+    });
+}
+
+
 
     /**
      * Reverse the migrations.
@@ -25,8 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('google_id');
-        });
+        Schema::dropIfExists('invitations');
     }
-};
+}

@@ -25,11 +25,14 @@
                 </div>
                 <div class="col-auto my-auto">
                     <div class="h-100">
-                        <h5 class="mb-1">
-                            User
+                        <h5 class="mb-1" >
+                        <div class="row">
+                        <div class="col-md-6">
+                            <input class="text-dark" style="font-family: 'Poppins'; width: auto; border: none;" value="{{ auth()->user()->name }}" type="text" id="user-name" name="name"  readonly>
+                        </div>
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            {{ __(' CEO / Co-Founder') }}
+                            Welcome to your profile!
                         </p>
                     </div>
                 </div>
@@ -43,7 +46,7 @@
                 <form action="/user-profile" method="POST" role="form text-left">
                     @csrf
                     @if($errors->any())
-                        <div class="mt-3  alert alert-primary alert-dismissible fade show" role="alert">
+                        <div class="alert alert-primary alert-dismissible fade show px-4 col-lg-4" role="alert">
                             <span class="alert-text text-white">
                             {{$errors->first()}}</span>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
@@ -52,7 +55,7 @@
                         </div>
                     @endif
                     @if(session('success'))
-                        <div class="m-3  alert alert-success alert-dismissible fade show" id="alert-success" role="alert">
+                        <div class="alert alert-success alert-dismissible fade show px-4 col-lg-4" id="alert-success" role="alert">
                             <span class="alert-text text-white">
                             {{ session('success') }}</span>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">

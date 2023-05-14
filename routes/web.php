@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\ChangePasswordController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InfoUserController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ResetController;
@@ -9,10 +8,13 @@ use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RatingController;
+use App\Http\Controllers\GoogleAuthController;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\InviteController;
 // use Illuminate\Support\Facades\Auth;
 // use Illuminate\Support\Facades\Rule;
 
@@ -29,11 +31,24 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+	return view('dashboard');
+})->name('dashboard');
+
+
+Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
+Route::get('auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
+
+
+
+// Маршрут для відображення форми запрошення
+Route::get('/invite', [InviteController::class, 'showInviteForm'])->name('invite.show');
+
+// Маршрут для надсилання запрошення
+Route::post('/invite/send', [InviteController::class, 'sendInvitation'])->name('invite.send');
 
 Route::group(['middleware' => 'auth'], function () {
-
-    Route::get('/', [HomeController::class, 'home']);
+	
 	Route::get('dashboard', function () {
 		return view('dashboard');
 	})->name('dashboard');

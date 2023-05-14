@@ -92,8 +92,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'SoftUI-Laravel'),
+        'address' => env('MAIL_FROM_ADDRESS', 'leng@webapp.com'),
+        'name' => env('MAIL_FROM_NAME', 'Leng.'),
     ],
 
     /*

@@ -8,6 +8,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Instrument+Sans&display=swap');
 
   @font-face {
     font-family: 'Recoleta-Bold';
@@ -21,8 +22,8 @@
   font-weight: bold;
 }
 
-a,p,h1,h2,h3,h4,h5,h6{
-  font-family: "Archivo";
+a,p,h1,h2,h3,h4,h5,h6,label,figcaption{
+  font-family: "-apple-system";
 }
 
 </style>
@@ -53,13 +54,7 @@ a,p,h1,h2,h3,h4,h5,h6{
       }
     </style>
   </defs>
-<svg width="24px" height="24px" id="dashbicon" data-name="dashbicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.53 135.54">
-  <rect class="cls-1" x="3.5" y="73.89" width="60.5" height="58.15" rx="12" ry="12"/>
-  <rect class="cls-1" x="3.5" y="3.5" width="60.5" height="59.08" rx="12" ry="12"/>
-  <rect class="cls-1" x="82.15" y=".92" width="47.3" height="52.45" rx="12" ry="12" transform="translate(132.95 -78.65) rotate(90)"/>
-  <rect class="cls-1" x="91.96" y="91.98" width="27.69" height="52.45" rx="8.7" ry="8.7" transform="translate(224 12.4) rotate(90)"/>
-  <rect class="cls-1" x="91.96" y="51.62" width="27.69" height="52.45" rx="8.7" ry="8.7" transform="translate(183.65 -27.96) rotate(90)"/>
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-table"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path></svg>
           <span class="nav-link-text ms-3 text-regular">Dashboard</span>
         </a>
       </li>
@@ -68,17 +63,17 @@ a,p,h1,h2,h3,h4,h5,h6{
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('user-profile') ? 'active' : '') }} " href="{{ url('user-profile') }}">
-        <svg class="ms-2 text-dark" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             <span class="nav-link-text ms-3">User Profile</span>
         </a>
       </li>
       
-
+ 
 
     <!-- Rating -->
       <li class="nav-item">
-        <a class="nav-link {{ (Request::is('rating') ? 'active' : '') }}" href="{{ url('rating') }}">
-        <svg class="ms-2 text-dark" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+        <a class="nav-link {{ (Request::is('user-management') ? 'active' : '') }}" href="{{ url('user-management') }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
           <span class="nav-link-text ms-3">Invite friends</span>
         </a>
       </li>
@@ -91,7 +86,7 @@ a,p,h1,h2,h3,h4,h5,h6{
       <!-- Grammar -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('grammar') ? 'active' : '') }}" href="{{ url('grammar') }}">
-        <svg class="ms-2 text-dark" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
           <span class="nav-link-text ms-3">Grammar</span>
         </a>
       </li>
@@ -101,23 +96,7 @@ a,p,h1,h2,h3,h4,h5,h6{
       <!-- Listening -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('listening') ? 'active' : '') }}" href="{{ url('listening') }}">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg width="30px" height="30px" id="listeningicon" data-name="listeningicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.17 135.37">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #1d1d1b;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 10px;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="M32.11,130.37h0c-14.91,0-27.11-12.2-27.11-27.11v-13.63c0-10.75,8.8-19.55,19.55-19.55h7.55c6.6,0,12,5.4,12,12v36.29c0,6.6-5.4,12-12,12Z"/>
-  <path class="cls-1" d="M126.06,70.08h7.55c10.79,0,19.55,8.76,19.55,19.55v13.63c0,14.96-12.15,27.11-27.11,27.11h0c-6.62,0-12-5.38-12-12v-36.29c0-6.62,5.38-12,12-12Z"/>
-  <path class="cls-1" d="M133.61,70.08S138.33,5,76.73,5C21.37,5,24.55,70.08,24.55,70.08"/>
-</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-headphones"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
           <span class="nav-link-text ms-3">Listening</span>
         </a>
       </li>
@@ -129,15 +108,7 @@ a,p,h1,h2,h3,h4,h5,h6{
       <!-- Reading -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('reading') ? 'active' : '') }}" href="{{ url('reading') }}">
-        <?xml version="1.0" encoding="UTF-8"?>
-        
-<svg width="24px" height="24px" id="_Шар_1" data-name="Шар 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.95 152.95">
-  <rect class="cls-1" x="5" y="5" width="142.95" height="142.95" rx="12" ry="12"/>
-  <line class="cls-1" x1="31.92" y1="65.29" x2="105.3" y2="65.29"/>
-  <line class="cls-1" x1="31.92" y1="42.92" x2="121.02" y2="42.92"/>
-  <line class="cls-1" x1="31.92" y1="87.66" x2="121.02" y2="87.66"/>
-  <line class="cls-1" x1="31.92" y1="110.03" x2="85.88" y2="110.03"/>
-</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
           <span class="nav-link-text ms-3">Reading</span>
         </a>
       </li>
@@ -148,22 +119,7 @@ a,p,h1,h2,h3,h4,h5,h6{
       <!-- Writing -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('writing') ? 'active' : '') }}" href="{{ url('writing') }}">
-        <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" id="write" data-name="write" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.02 118.14">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        stroke: #1d1d1b;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 10px;
-      }
-    </style>
-  </defs>
-  <polygon class="cls-1" points="85.92 38.04 36.01 99.68 20.51 106.41 5 113.14 8.36 96.57 11.7 80.01 61.61 18.36 85.92 38.04"/>
-  <path class="cls-1" d="M93.95,28.11l-8.04,9.93-24.31-19.68,8.04-9.93c3.22-3.98,9.05-4.59,13.03-1.37l9.91,8.02c3.97,3.22,4.59,9.05,1.37,13.02Z"/>
-</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
           <span class="nav-link-text ms-3">Writing</span>
         </a>
       </li>
@@ -173,7 +129,7 @@ a,p,h1,h2,h3,h4,h5,h6{
       <!-- Vocabulary -->
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('vocabulary') ? 'active' : '') }}" href="{{ url('vocabulary') }}">
-        <svg class="ms-2 text-dark" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M19.7 34.5c16.3-6.8 35 .9 41.8 17.2L192 364.8 322.5 51.7c6.8-16.3 25.5-24 41.8-17.2s24 25.5 17.2 41.8l-160 384c-5 11.9-16.6 19.7-29.5 19.7s-24.6-7.8-29.5-19.7L2.5 76.3c-6.8-16.3 .9-35 17.2-41.8z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           <span class="nav-link-text ms-3">Vocabulary</span>
         </a>
       </li>
@@ -215,7 +171,7 @@ a,p,h1,h2,h3,h4,h5,h6{
 
       <li class="nav-item">
         <a class="nav-link  " href="{{ url('/logout') }}">
-        <svg class="ms-2 text-dark" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
           <span class="nav-link-text ms-3">Sign Out</span>
         </a>
       </li>
