@@ -160,7 +160,7 @@ background: linear-gradient(0deg, #2b2f77 0%, #141852 50%, #070b34 100%);
 
 
 <div class="col-lg-12 row mt-4 px-4 mb-4">
-  <a href="{{ url('grammar') }}">
+  <!-- <a href="{{ url('grammar') }}">
     <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
       <div class="card">
         <div class="card-body p-3">
@@ -169,7 +169,7 @@ background: linear-gradient(0deg, #2b2f77 0%, #141852 50%, #070b34 100%);
               <div class="numbers">
                 <p class="text-sm mb-0 text-capitalize font-weight-bold text-secondary">Learning category</p>
                 <h5 class="font-weight-bolder mb-0">
-                <span style="font-size: 40px;">🕙</span> Grammar
+                <span style="font-size: 30px;">🕙</span> Grammar
                 </h5>
               </div>
             </div>
@@ -180,7 +180,7 @@ background: linear-gradient(0deg, #2b2f77 0%, #141852 50%, #070b34 100%);
         </div>
       </div>
       </a>
-    </div>
+    </div> -->
 
 
 
